@@ -1,30 +1,40 @@
 ﻿doctype html
 html
-  head
-    if title
-        title= `TMC | ${title}`
-    else
-        title TMC
+
+    meta(charset="utf-8")
+    meta(name="viewport",
+        content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel='stylesheet', href='/css/main.css')
-    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", 
+        crossorigin="anonymous")
+    link(rel='stylesheet', href='/css/main.css')
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda")
-  body
-      div(id="main-bg")
-          img(src="/images/golf_main_bkrnd.jpg" id="main-bg").bg
-      nav.navbar.navbar-expand-lg.navbar-light.navbar-custom
-          a(href="/").navbar-brand TMC
-          ul.navbar-nav.mr-auto#navbar
-              li(id="home-nav" class-title=="Home"?"nav-item active":"nav-item").navbar-item
-                  a(href="/").nav-link Home
-              li(id="rules-nav" class-title=="Rules"?"nav-item active":"nav-item").navbar-item
-                  a(href="#").nav-link Rules
-              li(id="honors-nav" class-title=="Honors"?"nav-item active":"nav-item").navbar-item
-                  a(href="#").nav-link Honors
-              li(id="gallery-nav" class-title=="Gallery"?"nav-item active":"nav-item").navbar-item
-                  a(href="#").nav-link Gallery
-      block content
-        
+
+    head
+        if title
+            title= `tMC | ${title}`
+        else
+            title tMC
+
+    body
+        div(id="main-bg")
+            img(src="/images/golf_main_bkrnd.jpg" id="main-bg").bg
+        nav.navbar.navbar-expand-lg.navbar-light.navbar-custom
+            a(href="/").navbar-brand tMC
+            ul.navbar-nav.mr-auto#navbar
+                li(id="home-nav" class=title=="Home"?"navbar-item active":"navbar-item")
+                    a(href="/").nav-link Home
+                li(id="rules-nav" class=title=="Rules"?"navbar-item active":"navbar-item")
+                    a(href="/rules").nav-link Rules
+                li(id="honors-nav" class=title=="Honors"?"navbar-item active":"navbar-item")
+                    a(href="#").nav-link Honors
+                li(id="gallery-nav" class=title=="Gallery"?"navbar-item active":"navbar-item")
+                    a(href="#").nav-link Gallery
+        block content
+
+
         script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")

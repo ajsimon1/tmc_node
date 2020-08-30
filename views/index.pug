@@ -1,7 +1,13 @@
 ﻿extends layout
 
 block content
-    div.container
-        h1 Hi Jackson, how are you
+    div.container#login-container
+        div.row
+            div.col.btn-group
+                button(type=button).col.col-md-6.btn.btn-outline-secondary.btn-custom#btn-login Login
+                button(type=button).col.col-md-6.btn.btn-outline-secondary.btn-custom#btn-register Register
         
+    script(src="/js/main.js")
     script(src="/js/index.js")
+        
+    
