@@ -4,7 +4,6 @@ html
     meta(charset="utf-8")
     meta(name="viewport",
         content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    link(rel='stylesheet', href='/css/main.css')
     link(rel='stylesheet', 
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", 
         crossorigin="anonymous")
@@ -19,19 +18,22 @@ html
             title tMC
 
     body
-        div(id="main-bg")
-            img(src="/images/golf_main_bkrnd.jpg" id="main-bg").bg
-        nav.navbar.navbar-expand-lg.navbar-light.navbar-custom
+        div.bg.img-fluid
+        nav.navbar.navbar-expand-sm.navbar-dark.fixed-top
             a(href="/").navbar-brand tMC
-            ul.navbar-nav.mr-auto#navbar
-                li(id="home-nav" class=title=="Home"?"navbar-item active":"navbar-item")
-                    a(href="/").nav-link Home
-                li(id="rules-nav" class=title=="Rules"?"navbar-item active":"navbar-item")
-                    a(href="/rules").nav-link Rules
-                li(id="honors-nav" class=title=="Honors"?"navbar-item active":"navbar-item")
-                    a(href="#").nav-link Honors
-                li(id="gallery-nav" class=title=="Gallery"?"navbar-item active":"navbar-item")
-                    a(href="#").nav-link Gallery
+            button(type="button" data-toggle="collapse" data-target="#navbar-collapse-content" aria-controls="navbar-collapse-content" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+                span.navbar-toggler-icon
+            div(id="navbar-collapse-content").collapse.navbar-collapse
+                ul(id="navbar").navbar-nav.mr-auto
+                    li(id="home-nav" class=title=="Home"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
+                        a(href="/").nav-link Home
+                    li(id="rules-nav" class=title=="Rules"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
+                        a(href="/rules").nav-link Rules
+                    li(id="honors-nav" class=title=="Honors"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
+                        a(href="#").nav-link Honors
+                    li(id="gallery-nav" class=title=="Gallery"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
+                        a(href="#").nav-link Gallery
+        
         block content
 
 
