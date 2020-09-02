@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "main": "app.js",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
-    "start": "nodemon ."
+    "start": "node app.js"
   },
   "description": "Node webapp for The Tony Mangine Classic Website",
   "author": {
