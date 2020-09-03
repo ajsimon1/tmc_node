@@ -1,27 +1,52 @@
-﻿body {
-
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    height: 100%;
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
 
-html {
-    height: 100%;
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
 }
 
-.bg {
-    /* The image used */
-     background-image: url("../images/golf_main_bkrnd.jpg");
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
 
-     /* Full height */
-     height: 100%;
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
 
-     /* Center and scale the image nicely */
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
+/* change back ground color of navbar at break point
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+    margin-bottom: 10px;
+  }
+}
+*/
 
-     /* set blur effects */
-     filter: blur(1px) sepia(60%);
+h1 {
+  letter-spacing: 8px;
+  font-family: "Alata";
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+a.btn:hover {
+    color: black !important;
 }
 
 /*
@@ -57,10 +82,6 @@ li.active a {
     color: 	#ffbb91 !important;
 }
 
-li a:hover {
-    color: 	#ffbb91 !important;
-}
-
 /*
 *********************** LANDING PAGE *******************************************
 */
@@ -75,5 +96,6 @@ li a:hover {
 }
 
 .btn-custom:hover {
+    color: 	#ffbb91 !important;
     background-color: transparent;
 }

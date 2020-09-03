@@ -1,10 +1,17 @@
-﻿extends layout
+extends layout
 
 block content
+    div(data-wow-delay="0.3s").mask.rgba-gradient.d-flex.justify-content-center.align-items-center
+        div.container
+            div.row
+                div.col-md-12.mb-4.white-text.text-center
+                    h1(data-wow-delay="0.3s" style="blur: none;").h1-reponsive.text-white.font-weight-bold.mb-0.pt-md-5.pt-5 tony Mangine Classic
+    div(style="height: 500px;").container
     div.container
-        h1 Hey there
-        
-    script(src="/js/main.js")
+        div.row
+            div.col.text-right.text-white
+                a.btn.btn-outline-light.wow.fadeInDown.px-5.btn-custom Login
+            div.col.text-left.text-white
+                a.btn.btn-outline-light.wow.fadeInDown.px-5.btn-custom Register
     script(src="/js/index.js")
-        
-    
+    script(src="/js/main.js")
