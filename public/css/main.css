@@ -45,10 +45,11 @@ h5 {
   width: 80px;
 }
 
+/*
 a.btn:hover {
     color: black !important;
 }
-
+*/
 /*
 ******************* NAVBARS ****************************************************
 */
@@ -92,7 +93,7 @@ li.active a {
     margin: 25px 10px 10px 10px;
     font-family: "Alata";
     border-color: #fbf7f5;
-
+    width: 200px;
 }
 
 .btn-custom:hover {
