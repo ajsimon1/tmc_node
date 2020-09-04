@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", () => {
     var navbar = document.getElementById("navbar");
     navbar.style.display = "none";
@@ -6,3 +7,4 @@ document.addEventListener("DOMContentLoaded", () => {
     toggler.style.display = "none";
 
 })
+*/
