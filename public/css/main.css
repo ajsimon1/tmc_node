@@ -100,3 +100,14 @@ li.active a {
     color: 	#ffbb91 !important;
     background-color: transparent;
 }
+
+/*
+*********************** RULES PAGE ********************************************
+*/
+div.custom-rules-div {
+    opacity: .6 !important;
+}
+
+div.list-group a.active {
+    color: #ffbb91 !important;
+}

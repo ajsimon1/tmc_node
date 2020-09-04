@@ -1,5 +1,51 @@
 extends layout
 
 block content
+    div(style="height: 15%;").container
+    div.container
+        div.align-items-end
+            div.col-sm-12
+                h2.h2-responsive.text-white tMC Rules of Engagement
+    div.container.border.border-white.rounded.bg-light.h-25.custom-rules-div
+        h5.my-3 General Tournament Rules
+        div.row
+            div.col-4
+                div(id="list-tab" role="tablist").list-group
+                    a(id="list-breakfast-list",
+                      data-toggle="list",
+                      href="#list-breakfast",
+                      role="tab",
+                      aria-controls="breakfast").list-group-item.list-group-item-action.active Breakfast Balls
+                    a(id="list-rolling-list",
+                      data-toggle="list",
+                      href="#list-rolling",
+                      role="tab",
+                      aria-controls="rolling").list-group-item.list-group-item-action Rolling
+                    a(id="list-maxscore-list",
+                      data-toggle="list",
+                      href="#list-maxscore",
+                      role="tab",
+                      aria-controls="maxscore").list-group-item.list-group-item-action Max Score
+            div.col-8
+                div(id="nav-tabContent").tab-content
+                    div(id="list-breakfast",
+                        role="tabpanel",
+                        aria-labelledby="list-breakfast-list").tab-pane.fade.show.active
+                        h6 Breakfast balls are awarded to each player according to the following regulations:
+                        ul
+                            li 1 breakfast ball per round which may ONLY be used on the first tee box of every round
+                            li It must be called immediately after your first shot and re-teed and struck before any
+                            li Other player strokes and that shot MUST be used to continue the hole
+                            li No breakfast balls will be allowed for the scramble round
+                            li No mulligans allowed
+                    div(id="list-rolling",
+                        role="tabpanel",
+                        aria-labelledby="list-rolling-list").tab-pane.fade.show
+                        h6 You CAN roll your ball in the fairway. Roll does not pick up and place, it means roll it out of divot. If wet conditions, lift/clean/place may be put in place based on group consensus
+                    div(id="list-maxscore",
+                        role="tabpanel",
+                        aria-labelledby="list-maxscore-list").tab-pane.fade.show
+                        h6 For pace of play, the maximum you can score on a hole is triple bogey
+                        
 
     script(src="/js/main.js")
