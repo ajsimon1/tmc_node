@@ -109,5 +109,9 @@ div.custom-rules-div {
 }
 
 div.list-group a.active {
-    color: #ffbb91 !important;
+    background-color: #ffbb91 !important;
+}
+
+div.list-group a.list-group-item {
+    border: 2px solid white; 
 }

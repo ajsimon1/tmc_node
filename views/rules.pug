@@ -6,9 +6,9 @@ block content
         div.align-items-end
             div.col-sm-12
                 h2.h2-responsive.text-white tMC Rules of Engagement
-    div.container.border.border-white.rounded.bg-light.h-25.custom-rules-div
+    div.container.border.border-white.rounded.bg-light.custom-rules-div
         h5.my-3 General Tournament Rules
-        div.row
+        div.row.pb-3.mb-5
             div.col-4
                 div(id="list-tab" role="tablist").list-group
                     a(id="list-breakfast-list",
@@ -26,6 +26,21 @@ block content
                       href="#list-maxscore",
                       role="tab",
                       aria-controls="maxscore").list-group-item.list-group-item-action Max Score
+                    a(id="list-gimmie-list",
+                      data-toggle="list",
+                      href="#list-gimmie",
+                      role="tab",
+                      aria-controls="maxscore").list-group-item.list-group-item-action Gimmies
+                    a(id="list-ob-list",
+                      data-toggle="list",
+                      href="#list-ob",
+                      role="tab",
+                      aria-controls="maxscore").list-group-item.list-group-item-action Out of Bounds
+                    a(id="list-weather-list",
+                      data-toggle="list",
+                      href="#list-weather",
+                      role="tab",
+                      aria-controls="maxscore").list-group-item.list-group-item-action Weather
             div.col-8
                 div(id="nav-tabContent").tab-content
                     div(id="list-breakfast",
@@ -46,6 +61,28 @@ block content
                         role="tabpanel",
                         aria-labelledby="list-maxscore-list").tab-pane.fade.show
                         h6 For pace of play, the maximum you can score on a hole is triple bogey
-                        
+                    div(id="list-gimmie",
+                        role="tabpanel",
+                        aria-labelledby="list-gimmie-list").tab-pane.fade.show
+                        h6 They are a part of the game...
+                        ul
+                            li All putts for birdies must be holed
+                            li A gimme is within 2 ft. (putter grip)
+                            li Gimmes must come from your opponent
+                            li Anything non quota/match play relevant use discretion and speed up play
+                    div(id="list-ob",
+                        role="tabpanel",
+                        aria-labelledby="list-ob-list").tab-pane.fade.show
+                        h6 For pace of play reasons all lost balls regardless of stake colors will count as 1 stroke
+                        p.font-weight-bold Drops will be placed within 2 club lengths of where the ball was lost using line of flight of the ball. This will be agreed upon by your opponent
+                    div(id="list-weather",
+                        role="tabpanel",
+                        aria-labelledby="list-weather-list").tab-pane.fade.show
+                        h6 If we get rained out or dragged off the course during a match
+                        ul
+                            li We will wait it out as long as possible and within reason to play golf and finish rounds
+                            li If 5 holes on a front/back nine are completed points, 1 point, can still be awarded for the front/back nine *All groups must complete the 5 holes*
+                            li If 14 holes on a front/back nine are completed points, 2 points, can still be awarded for the overall match *All groups must complete the 14 holes*
+                
 
     script(src="/js/main.js")
