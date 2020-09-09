@@ -79,7 +79,7 @@ li.navbar-item {
     font-size: 18px;
 }
 
-li.active a {
+div.navbar-nav a.active {
     color: 	#ffbb91 !important;
 }
 
@@ -113,5 +113,5 @@ div.list-group a.active {
 }
 
 div.list-group a.list-group-item {
-    border: 2px solid white; 
+    border: 2px solid white;
 }

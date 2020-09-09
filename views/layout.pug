@@ -21,18 +21,14 @@ html(lang="eng")
         header
             nav.navbar.navbar-expand-sm.navbar-dark.fixed-top.mb-3
                 a(href="/").navbar-brand tMC
-                button(type="button" data-toggle="collapse" data-target="#navbar-collapse-content" aria-controls="navbar-collapse-content" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+                button(type="button" data-toggle="collapse" data-target="#navbar-collapse-content" aria-controls="navbar-collapse-content" aria-expanded="true" aria-label="Toggle navigation").navbar-toggler
                     span.navbar-toggler-icon#toggler
-                div(id="navbar-collapse-content").collapse.navbar-collapse
-                    ul(id="navbar").navbar-nav.mr-auto
-                        li(id="home-nav" class=title=="Home"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
-                            a(href="/").nav-link Home
-                        li(id="rules-nav" class=title=="Rules"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
-                            a(href="/rules").nav-link Rules
-                        li(id="honors-nav" class=title=="Honors"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
-                            a(href="#").nav-link Honors
-                        li(id="gallery-nav" class=title=="Gallery"?"navbar-item pr-2 mr-2 active":"navbar-item pr-2 mr-2")
-                            a(href="#").nav-link Gallery
+                nav(id="navbar-collapse-content").collapse.navbar-collapse
+                    div(id="navbar").navbar-nav.mr-auto
+                        a(href="/" id="home-nav" class=title=="Home"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link") Home
+                        a(id="rules-nav" class=title=="Rules"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="/rules").nav-link Rules
+                        a(id="honors-nav" class=title=="Honors"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="#").nav-link Honors
+                        a(id="gallery-nav" class=title=="Gallery"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="#").nav-link Gallery
             div(style="background-image: url('../images/golf_main_bkrnd_3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;").view
                 block content
 
