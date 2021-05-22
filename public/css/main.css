@@ -115,3 +115,10 @@ div.list-group a.active {
 div.list-group a.list-group-item {
     border: 2px solid white;
 }
+
+/*
+ ********************* HONORS PAGE ********************************************
+ */
+ .btn-link {
+  color: 	#b8724a !important;
+ }

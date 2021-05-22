@@ -15,7 +15,6 @@ html(lang="eng")
         if title
             title= `tMC | ${title}`
         else
-            title tMC
 
     body
         header
@@ -27,8 +26,8 @@ html(lang="eng")
                     div(id="navbar").navbar-nav.mr-auto
                         a(href="/" id="home-nav" class=title=="Home"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link") Home
                         a(id="rules-nav" class=title=="Rules"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="/rules").nav-link Rules
-                        a(id="honors-nav" class=title=="Honors"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="#").nav-link Honors
-                        a(id="gallery-nav" class=title=="Gallery"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="#").nav-link Gallery
+                        a(id="honors-nav" class=title=="Honors"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="honors").nav-link Honors
+                        a(id="gallery-nav" class=title=="Gallery"?"navbar-item pr-2 mr-2 nav-link active":"navbar-item pr-2 mr-2 nav-link" href="/gallery").nav-link Gallery
             div(style="background-image: url('../images/golf_main_bkrnd_3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;").view
                 block content
 

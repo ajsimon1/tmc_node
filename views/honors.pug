@@ -1,0 +1,41 @@
+extends layout
+
+block content 
+    div(style="height: 15%;").container
+    div.container
+        div.align-items-end
+            div.col-sm-12
+                h2.h2-responsive.text-white honors
+                    div.container.border.border-white.rounded.bg-light.custom-rules-div
+    div(id="accordion").container.border.border-white.rounded.bg-light.custom-rules-div
+        div(id="honors-2019").card.border-0.mb-1
+            div.card-header#headingOne
+                h5.mb-0 
+                    button(
+                        data-toggle="collapse",
+                        data-target="#collapseOne",
+                        aria-expanded="false",
+                        aria-controls="collapseOne"
+
+                    ).btn.btn-link MVP 2019
+            div(
+                aria-labelledby="headingOne",
+                data-parent="accordion"
+            ).collapse#collapseOne
+                div.card-body Ya Boy - Adam Simon
+        div(id="honors-2018").card.border-0
+            div.card-header#headingTwo
+                h5.mb-0 
+                    button(
+                        data-toggle="collapse",
+                        data-target="#collapseTwo",
+                        aria-expanded="false",
+                        aria-controls="collapseTwo"
+
+                    ).btn.btn-link Team Winners 2019
+            div(
+                aria-labelledby="headingTwo",
+                data-parent="accordion"
+            ).collapse#collapseTwo
+                div.card-body Also Ya Boy(s) - Adam Simon & Tony Mangine
+
